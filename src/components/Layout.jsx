@@ -34,6 +34,7 @@ const Layout = ({ children }) => {
         <div className="flex w-full justify-center">
           {menuItems.map((item, index) => (
             <div className="flex flex-col justify-end items-center">
+              {/* This one for Top Cloudy Icon in Active Section */}
               {location.pathname === item.path && (
                 <div className="flex flex-col items-center">
                   <div className="w-10 h-5 bg-primary rounded-t-full"></div>
@@ -42,6 +43,7 @@ const Layout = ({ children }) => {
                   </div>
                 </div>
               )}
+              {/* Main Menu */}
               <div
                 className={`px-20 bg-primary py-5 ${
                   index === 0 && 'rounded-l'
