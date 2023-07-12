@@ -28,9 +28,9 @@ const Layout = ({ children }) => {
   return (
     <div>
       {/* Content */}
-      <div className="">{children}</div>
+      <div className="pb-44">{children}</div>
       {/* Footer */}
-      <div className="fixed bottom-10 left-0 right-0 text-center w-full">
+      <div className="fixed bottom-10 left-0 right-0 text-center w-full z-20">
         <div className="flex w-full justify-center">
           {menuItems.map((item, index) => (
             <div className="flex flex-col justify-end items-center">
@@ -57,7 +57,7 @@ const Layout = ({ children }) => {
                 <Link
                   to={item.path}
                   key={index}
-                  className="text-secondary text-xl"
+                  className="text-secondary text-xl font-semibold"
                 >
                   {item.title}
                 </Link>
